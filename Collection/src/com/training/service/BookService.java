@@ -9,7 +9,7 @@ import com.training.model.Book;
 
 public class BookService implements CrudRepository {
 	
-	private ArrayList<Book> bookList;
+	private ArrayList<Book> bookList ;
 	
 
 	public BookService() {
