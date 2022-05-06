@@ -95,7 +95,7 @@ if(ch == 4) {
         
          if(ch == 2) {
  			
-        	 WebTarget findByIdTarget = target.path("/srch/1");
+        	 WebTarget findByIdTarget = target.path("/srch/77");
         	 
         	 Invocation.Builder builder2 = findByIdTarget.request(MediaType.APPLICATION_JSON);
         	 
@@ -108,7 +108,7 @@ if(ch == 4) {
          
          if(ch == 3) {
 		
-		Product toAdd = new Product(785,"upa",560);
+		Product toAdd = new Product(77,"upa",560);
 		
 		Response response = builder.post(Entity.entity(toAdd, MediaType.APPLICATION_JSON));
 
