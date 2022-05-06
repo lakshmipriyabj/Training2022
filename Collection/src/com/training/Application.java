@@ -18,7 +18,7 @@ public class Application {
 	public static void main(String[] args) 
 	{
 	        
-		Book java = new Book(101,"java","Suba",450);
+		Book java = new Book(101,"java","jerushsa",450);
 		
 		Book spring= new Book(102,"spring","Mad",650);
 		Book maven= new Book(103,"Maven","Harish",550);

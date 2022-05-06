@@ -112,5 +112,56 @@ public class ProductService {
         	}
         	return productList;
         }
+        public void usingTxn(Product prd1,Product prd2) {
+        	
+        	String sql="insert into lp_product values(?,?,?)";
+        	try(PreparedStatement pstmt = con.prepareStatement(sql)){
+        		con.setAutoCommit(false);
+        		pstmt.setInt(1, prd1.getProductId());
+        		pstmt.setString(2, prd1.getProductName());
+        		pstmt.setDouble(3, prd1.getPrice());
+        		
+        		int rowAdded=pstmt.executeUpdate();
+        		
+        		pstmt.setInt(1, prd2.getProductId());
+        		pstmt.setString(2, prd2.getProductName());
+        		pstmt.setDouble(3, prd2.getPrice());
+        		int rowAdded2=pstmt.executeUpdate();
+        		
+        		if(prd2.getPrice()>prd1.getPrice()) {
+                  con.commit();}
+        		else {
+        			con.rollback();
+        		}
+        		System.out.println("Row Added:" +rowAdded+","+rowAdded2);
+				
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+        }
+  public void usingTxnusingcatchblock(Product prd1,Invoice prd2) {
+        	
+        	String sql="insert into lp_product values(?,?,?)";
+        	String sqlin = "insert into lp_invoice values(?,?,?,?)";
+        	try(PreparedStatement pstmt = con.prepareStatement(sql);
+        			PreparedStatement pstmt2 = con.prepareStatement(sqlin)){
+        		con.setAutoCommit(false);
+        		pstmt.setInt(1, prd1.getProductId());
+        		pstmt.setString(2, prd1.getProductName());
+        		pstmt.setDouble(3, prd1.getPrice());
+        		
+        		int rowAdded=pstmt.executeUpdate();
+        		
+        		pstmt2.setInt(1, prd2.getInvoiceNumber());
+        		pstmt2.setString(2,prd2.getCustomerName());
+        		pstmt2.setDouble(3,prd2.getQuantity());
+        		pstmt2.setInt(4,prd2.getProductRef());
+        		
+        		int rowAdded2 = pstmt2.executeUpdate();
+        		con.commit();
+        	}catch(SQLException e) {
+        		e.printStackTrace();
+        	}
         
 }
+  }

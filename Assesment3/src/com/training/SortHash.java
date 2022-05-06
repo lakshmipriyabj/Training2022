@@ -14,7 +14,7 @@ public class SortHash {
 		Sort item4 = new Sort("PineApple");
 		Sort item5 = new Sort("Orange");
 		Sort item6 = new Sort("Banana");
-		TreeSet<String> set = new TreeSet<>();
+		HashSet<String> set = new HashSet<>();
 			
 		
 		set.add(item1);
