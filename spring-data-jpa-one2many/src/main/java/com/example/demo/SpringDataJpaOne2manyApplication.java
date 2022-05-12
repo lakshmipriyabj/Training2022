@@ -16,7 +16,7 @@ public class SpringDataJpaOne2manyApplication {
 	
 		ConfigurableApplicationContext ctx=	SpringApplication.run(SpringDataJpaOne2manyApplication.class, args);
 	        DoctorUtils obj = ctx.getBean(DoctorUtils.class);
-	        obj.create();
+	     //   obj.create();
 	        
 	        obj.findAll();
 	        

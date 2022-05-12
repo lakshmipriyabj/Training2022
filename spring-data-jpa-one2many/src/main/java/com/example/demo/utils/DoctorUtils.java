@@ -5,9 +5,10 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.example.demo.DoctorRepository;
+
 import com.example.demo.entity.Doctor;
 import com.example.demo.entity.Patient;
+import com.example.demo.ifaces.DoctorRepository;
 
 @Component
 public class DoctorUtils {
