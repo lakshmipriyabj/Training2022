@@ -1,4 +1,4 @@
-package com.example.demo.entity.Bidirectional;
+package com.example.demo.entity;
 
 import java.util.List;
 
@@ -18,7 +18,7 @@ import lombok.NoArgsConstructor;
 
 
 @Entity
-@Table(name="lp_doctor_bidirectional")
+@Table(name="lp_doctor_bid")
 
 
 @Data 
@@ -36,8 +36,18 @@ public class Doctor {
 	@Column(name="phone_number")
 	long phoneNumber;
 	
-    @OneToMany(mappedBy = "doctor",fetch = FetchType.EAGER,cascade= CascadeType.ALL)
+	
   
-    List<Patient> patientList;  ///one to many one doctor has many patient
 
+
+	@Override
+	public String toString() {
+		return "Doctor [doctorId=" + doctorId + ", doctorName=" + doctorName + ", department=" + department
+				+ ", phoneNumber=" + phoneNumber +  "]";
+		
+	}
+	
+	  @OneToMany(mappedBy="doctor",cascade= CascadeType.ALL)
+	   // @JoinColumn(name="doctor_ref",referencedColumnName = "doctor_id")
+	    List<Patient> patientList;  ///one to many one doctor has many patient
 }

@@ -14,7 +14,7 @@ public class SortHash {
 		Sort item4 = new Sort("PineApple");
 		Sort item5 = new Sort("Orange");
 		Sort item6 = new Sort("Banana");
-		HashSet<String> set = new HashSet<>();
+		TreeSet<Sort> set = new TreeSet<>();
 			
 		
 		set.add(item1);
@@ -23,16 +23,16 @@ public class SortHash {
 		set.add(item4);
 		set.add(item5);
 		set.add(item6);
-		
-		for(String each :set) {
-		
-		System.out.println(each.getFruites());
-
-System.out.println(each.toString());
+		System.out.println(set);
+//		for(String each :set) {
+//		
+//		System.out.println(each.getFruites());
+//
+//   System.out.println(each.toString());
 	}
 
 }
-}
+//}
 
 
 //package com.training;
