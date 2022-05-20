@@ -15,10 +15,11 @@ public class UsingPredicate {
     {
     System.out.println(value);
     }
+    };
     names.forEach(consumer);
 //    System.out.println("---------------------");
     names.forEach(value ->System.out.println(value));
-    };
+   
 
 }
 }
