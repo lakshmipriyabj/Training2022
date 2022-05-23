@@ -1,0 +1,8 @@
+1)spring starter projectmicro -micro-service-one
+web,lombok,oraclejar,datad Jpa ,eureka discovery client,actuator
+
+2)spring starter project -micro-service-two
+web,lombok,oraclejar,datad Jpa ,eureka discovery client,actuator
+
+3)eureka -registry
+web,eureka service,actuator
