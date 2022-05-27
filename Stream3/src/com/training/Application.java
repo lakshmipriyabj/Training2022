@@ -46,87 +46,87 @@ public class Application {
 //	      System.out.println(eachBook);
 //     	}
 		
-    	
-     	System.out.println("===============");
-		
-		Book foundBook = service.findById(101);
-		
-		System.out.println("Found Book" +foundBook);
-		
-		System.out.println("===============");
-		
-		System.out.println(service.remove(maven));
-		
-//	     List<Book> SecondList = service.findall();
-//	     for(Book eachBook2:SecondList) {
-//	    	 System.out.println(eachBook2);
-//	     }
+//    	
+//     	System.out.println("===============");
 //		
-		print(service.findall());
-	
-		Book react = new Book(106,"ReactJS","Rahul",6850);
-		service.add(react);
-		System.out.println("========after update=====");
-		
-		print(service.findall());
-		
-		Book reactNew = new Book(106,"ReactJS","Rahul kkkk",6850);
-		service.update(react,reactNew);
-		System.out.println("========after update=====");
-		print(service.findall());
-		
-		
-		
-				
-				System.out.println("is added="+service.add(java));
-				service.add(spring);
-				service.add(java);
-				service.add(maven);
-				service.add(html);
-				service.add(python);
-				
-				CrudRepository service1=new BookService();
-				List<Book> bookList1=((BookService)service).getBooksGrtThan(600);
-				System.out.println("===========");
-				bookList1.forEach(System.out::println);
-				System.out.println("+++");
-		//for(Book eachBook : bookList)
-                System.out.println("-------------------------");
-                
-                System.out.println("Using stream");
-                
-                ((BookService)service).findBooksGrtThan(100).forEach(System.out::println);
-                
-                List<String> nameList = ((BookService)service).getBookNames();
-                nameList.forEach(System.out::println);
-                
-                System.out.println("==============");
-                
-                List<String> grtThanNineHundred=((BookService)service).getBookNames();
-                grtThanNineHundred.forEach(System.out::println);
-                
-                System.out.println("Greater Than");
-                
-                List<Book> bookList11 = ((BookService)service).getBooksGrtThan(800);
-                bookList11.forEach(System.out::println);
-                System.out.println("==============");
-                
-                System.out.println("sorted by name");
-
-                List<Book> sortedByNumber =((BookService)service).sortedByNames();
-                sortedByNumber.forEach(System.out::println);
-              
-                System.out.println("==============");
-                
-                System.out.println("sorted by Number");
-
-                
-                List<Book> sortedByNumberDesc =((BookService)service).sortedByNumberDesc();
-                sortedByNumberDesc.forEach(System.out::println);
-                
-                
-                
-                
+//		Book foundBook = service.findById(101);
+//		
+//		System.out.println("Found Book" +foundBook);
+//		
+//		System.out.println("===============");
+//		
+//		System.out.println(service.remove(maven));
+//		
+////	     List<Book> SecondList = service.findall();
+////	     for(Book eachBook2:SecondList) {
+////	    	 System.out.println(eachBook2);
+////	     }
+////		
+//		print(service.findall());
+//	
+//		Book react = new Book(106,"ReactJS","Rahul",6850);
+//		service.add(react);
+//		System.out.println("========after update=====");
+//		
+//		print(service.findall());
+//		
+//		Book reactNew = new Book(106,"ReactJS","Rahul kkkk",6850);
+//		service.update(react,reactNew);
+//		System.out.println("========after update=====");
+//		print(service.findall());
+//		
+//		
+//		
+//				
+//				System.out.println("is added="+service.add(java));
+//				service.add(spring);
+//				service.add(java);
+//				service.add(maven);
+//				service.add(html);
+//				service.add(python);
+//				
+//				CrudRepository service1=new BookService();
+//				List<Book> bookList1=((BookService)service).getBooksGrtThan(600);
+//				System.out.println("===========");
+//				bookList1.forEach(System.out::println);
+//				System.out.println("+++");
+//		//for(Book eachBook : bookList)
+//                System.out.println("-------------------------");
+//                
+//                System.out.println("Using stream");
+//                
+//                ((BookService)service).findBooksGrtThan(100).forEach(System.out::println);
+//                
+//                List<String> nameList = ((BookService)service).getBookNames();
+//                nameList.forEach(System.out::println);
+//                
+//                System.out.println("==============");
+//                
+//                List<String> grtThanNineHundred=((BookService)service).getBookNames();
+//                grtThanNineHundred.forEach(System.out::println);
+//                
+//                System.out.println("Greater Than");
+//                
+//                List<Book> bookList11 = ((BookService)service).getBooksGrtThan(800);
+//                bookList11.forEach(System.out::println);
+//                System.out.println("==============");
+//                
+//                System.out.println("sorted by name");
+//
+//                List<Book> sortedByNumber =((BookService)service).sortedByNames();
+//                sortedByNumber.forEach(System.out::println);
+//              
+//                System.out.println("==============");
+//                
+//                System.out.println("sorted by Number");
+//
+//                
+//                List<Book> sortedByNumberDesc =((BookService)service).sortedByNumberDesc();
+//                sortedByNumberDesc.forEach(System.out::println);
+//                
+//                
+//                
+//                
 	}
 	
 
