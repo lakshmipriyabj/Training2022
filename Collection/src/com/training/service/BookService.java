@@ -89,7 +89,7 @@ public class BookService implements CrudRepository {
 	public List<Book> getBooksGrtThan(double price)
 	{
 		List<Book>grtThanList=new ArrayList<>();
-
+ 
 
 		Predicate<Double>grtThan = (value)-> value>price;
 		

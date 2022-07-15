@@ -12,6 +12,4 @@ public interface CrudRepository {
 	public List<Book> findall();
 	public Book update(Book oldbook,Book recentBook);
 	
-	
-
 }

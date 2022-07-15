@@ -22,8 +22,7 @@ public class SpringDataJpaOne2oneApplication {
 		Seminar obj = ctx.getBean(Seminar.class);
 		SeminarRepository repo = ctx.getBean(SeminarRepository.class);
 		
-        // Seminar added = repo.save(obj);
- 		
+        // Seminar added = repo.save(obj); 		
  	//	if(added!=null) {
  	//		System.out.println("One Row Added");
  	//	}
@@ -33,7 +32,7 @@ public class SpringDataJpaOne2oneApplication {
 //		//obj.create();
 //		obj.findAll();
 //		ctx.close();
-				
+					
 	}
 	
 	@Bean
@@ -50,3 +49,8 @@ public class SpringDataJpaOne2oneApplication {
 	}
 
 }
+
+
+
+
+
