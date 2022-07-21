@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookTaxi</title>
+    <style>
+        /* h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+     } */
+     body{
+            text-align: center;
+            color: black;
+            background-image: url(../images/booking.png);
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            background-position: 50%;
+    }
+    div{
+        padding: 10px;
+    }
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Taxi Booking</h1>
+    <section>
+        <header> <h2>New Booking</h2></header>
+        <form action="index.html" method="get">
+        <div>
+            <label for="customerName">CustomerName</label>
+            <input type="text" name="customerName" id="customerName">
+        </div>
+        <div>
+            <label for="requestedDate&Time">RequestedDate&Time</label>
+                <input type="datetime-local" name="requesteddate&Time" id="requestedDate&Time">
+            
+        </div>
+        <div>
+            <label for="pickUpPoint">PickUpPoint</label>
+            <input type="text" name="pickUpPoint" id="pickUpPoint">
+        </div>
+        <div>
+            <label for="dropDownPoint">DropDownPoint</label>
+            <input type="text" name="dropDownPoint" id="dropDownPoint">
+        </div>
+        <div>
+            <label for="customerMobileNumber">CustomerMobileNumber</label>
+            <input type="tel" name="customerMobileNumber" id="customerMobileNumber">
+        </div>
+        <div>
+            <label for="vechicleType">VechicleType</label>
+            <select name="vechicleType" id="vechicleType">
+                <option value="car">Car</option>
+                <option value="tempo">Tempo Traveller</option>
+                <option value="bus">Bus</option>
+               
+            </select>
+        </div>
+        <div><label for="specialInstruction">SpecialInstruction</label>
+            <textarea id="specialInstruction" name="SpecialInstruction" 
+            placeholder="Enter Your Comments" rows="4" cols="30" 
+            spellcheck="spellcheck"></textarea>
+        </div>
+        <div>
+            
+            <input type="reset" value="Clear">
+            <input type="submit" value="Register">
+        </div>
+        </form>
+
+    </section>
+  </header>
+</body>
+</html>
