@@ -111,9 +111,9 @@ public class BookServiceTest {
 	@ValueSource(ints = {0,1,2})
 	void testGetBestBook(int pox) {
 		
-		System.out.println(System.getProperty("os.name"));
+		//System.out.println(System.getProperty("os.name"));
 		
-       assumeTrue(System.getProperty("os.name").equals("Windows 8"));  
+  //    assumeTrue(System.getProperty("os.name").equals("Windows 8"));  
         
 		assertEquals("Head First Java", service.getBestBooks().get(pox));
 	}
