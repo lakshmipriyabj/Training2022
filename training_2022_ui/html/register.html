@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+    crossorigin="anonymous">
+    <title>Register</title>
+    <style>
+    input[type='checkbox']:checked+label
+    {
+        border:2px solid #8400ff
+    }
+    input[type='radio']:radio+label
+    {
+        border:2px solid #8400ff
+    }</style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+   
+           <header class="col-md-12">
+               <h1> Lakshmi Taxi Service </h1>
+           </header>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+            <img src="../images/ben.jpg" alt="ben" height="200px" width="250px">
+        </div>
+        <section class="col-md-9">
+        
+        
+        <div>
+            <header><h1> New User Registration</h1></header>
+            <form action="index.html" method="get">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="dateOfBirth">DateOfBirth</label>
+                    <input type="date" name="dateOfBirth" id="dateOfBirth" class="form-control" required>
+                </div>
+                <div class="form-group" >
+                     <label for="city">City</label>
+                     <select name="city" id="city">
+                        <option value="CHN">Chennai</option>
+                        <option value="BOM">Mumbai</option>
+                        <option value="TPJ">Trichy</option>
+                        <option value="CBE">Coimbator</option>
+                    </select>
+                </div>
+                    
+                <div class="form-group"> 
+                     <label for="payment">Mode Of Payment</label>
+                     <input type="radio" name="payment" id="payment" value="Credit" class="form-control">
+                     <label>Credit Card</label>
+                     <input type="radio" name="payment" id="payment" value="Google Pay" class="form-control">
+                     <label>Google</label>
+                     <input type="radio" name="payment" id="payment" value="Cash" class="form-control">
+                     <label>Cash</label>
+                    </div>
+                <div class="form-group">  
+                    <label for="food">Food</label>
+                    <input type="checkbox" name="foodchoice" value="Veg" class="form-control">
+                    <label>Vegetarian</label>
+                    <input type="checkbox" name="foodchoice" value="Non-Veg" class="form-control">
+                    <label>Non-Vegetarian</label>
+                    <input type="checkbox" name="foodchoice" value="Jain-Veg" class="form-control">
+                    <label>Jain-Vegetarian</label>
+                </div>
+                <div class="form-group"> 
+                    <input type="reset" value="Clear" class="btn btn-info">
+                    <input type="submit" value="Register" class="btn btn-success">
+                </div>
+                
+            </form>
+        </section>
+    </header>
+   
+</body>
+</html>

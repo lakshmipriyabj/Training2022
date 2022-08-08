@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tariff</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+    crossorigin="anonymous">
+    <link href="../styles/style.css" rel="stylesheet">
+    <style>
+        /* table tr:nth-child(2){
+            background-color: rgb(233, 216, 216); for 2nd row
+        } */   
+        /* table tr:nth-child(odd){
+            background-color: rgb(233, 216, 216); /includes 013
+        } */
+        tbody tr:nth-child(even){
+            background-color: rgb(233, 216, 216);
+        }
+        h1{
+            border: 2px solid #00ff;
+            border-radius: 30px 40px;
+            background-color: blueviolet;
+        }
+        /* step by step */
+        /* section>img{
+            display: block;
+        } */
+        section>img:first-child{
+            border-radius: 15px;
+        }
+        section>img:last-child{
+            border-radius: 15px;
+        }
+        
+        /* side by side
+        section>img{
+            display: inline;
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <section>
+            <img src="../images/ben.jpg" alt="ben car">
+            <img src="../images/bmw.jpg" alt="bmw car">
+            <img src="../images/audi.jpg" alt="audi car">
+            <img src="../images/lam.jpg" alt="lambogine car">
+        </section>
+    </header>
+    <h1>Our Tariff</h1>
+    <table class="table table-border table-striped">
+        <thead>
+            <tr>
+                <td>Sl.no</td>
+                <td>Model</td>
+                <td>Rate Per Km</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Benz</td>
+                <td>Rs1800.00</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>BMW</td>
+                <td>2400.00</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Audi Traveller</td>
+                <td>Rs.500.00</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
